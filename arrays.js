@@ -1,25 +1,21 @@
-var chocolateBars = ['snickers',
-    'hundred grand',
-    'kitkat',
-    'skittles'
+var chocolateBars = ["snickers",
+    "hundred grand",
+    "kitkat",
+    "skittles"
   ]
 
 function addElementToBeginningOfArray(array, element) {
-  var done = [element, ...array];
-  return done;
+  return [element, ...array];
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  var done = array.unshift(element);
-  return done
+  return array.unshift(element);
 }
 
 function addElementToEndOfArray(array, element) {
-  var done = [...array, element];
-  return done
+  return [...array, element];
 }
 
-funtion destructivelyAddElementToEndOfArray(array, element) {
-  var done = array.push(element);
-  return done
+function destructivelyAddElementToEndOfArray(array, element) {
+ return array.push(element);
 }
